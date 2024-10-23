@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: Lufga;
+    src: url('./fonts/lufga-webfont/LufgaMedium.woff') format("woff");
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: Lufga-light;
+    src: url('./fonts/lufga-webfont/LufgaLight.woff') format("woff");
+  }
+}
+
+@layer components{
+  .image{
+    @apply w-64 h-64 object-cover
+  }
+  .list-element{
+    @apply text-sm
+  }
+  .card{
+    @apply bg-[#151515] px-4 py-10 rounded-3xl w-[30vw]
+  }
+}
