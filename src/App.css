@@ -20,10 +20,25 @@
   .image{
     @apply w-64 h-64 object-cover
   }
-  .list-element{
-    @apply text-sm
+  .image-lg{
+    @apply w-80 h-80 object-cover
+  }
+  .image-md{
+    @apply w-96 h-96 object-cover
+  }
+  .image-sm{
+    @apply w-64 h-64 object-cover
+  }
+  .image-size{
+    @apply lg:image-lg md:image-md sm:image-sm
   }
   .card{
     @apply bg-[#151515] px-4 py-10 rounded-3xl w-[30vw]
+  }
+  .card-xl{
+    @apply w-[25vw]
+  }
+  .card-lg{
+    @apply w-[50vw] text-2xl text-center
   }
 }

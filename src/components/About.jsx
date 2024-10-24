@@ -4,10 +4,15 @@ import { motion } from 'framer-motion';
 
 function About() {
   return (
-    <div className='text-[#7e7e7e] mt-52 flex flex-col space-y-32 pb-24'>
-        <div className='flex space-x-4'>
+    <div className='text-[#7e7e7e] mt-52 flex flex-col space-y-32 pb-24
+                        xl:pt-24 lg:pt-[35rem] md:pt-[95rem] sm:pt-[67rem]'
+    >
+        <div className='flex space-x-4 xl:justify-center 
+                        lg:grid lg:grid-cols-1 lg:mx-auto lg:space-y-10
+                        md:ml-24'
+        >
             <motion.div 
-                className='card'
+                className='card xl:card-xl lg:card-lg lg:ml-5'
                 initial={{opacity: 0, y:100}}
                 whileInView={{ 
                     opacity: 1,
@@ -23,7 +28,7 @@ function About() {
                 your unique style.
             </motion.div>
             <motion.div 
-                className='card'
+                className='card xl:card-xl lg:card-lg'
                 initial={{opacity: 0, y:100}}
                 whileInView={{ 
                     opacity: 1,
@@ -41,7 +46,8 @@ function About() {
                 affordable prices.
             </motion.div>
             <motion.div 
-                className='card flex items-center justify-center space-x-3 text-white text-xl'
+                className=' card flex items-center justify-center space-x-3 text-white text-xl
+                            xl:card-xl lg:card-lg'
                 initial={{opacity: 0, y:100}}
                 whileInView={{ 
                     opacity: 1,
@@ -54,7 +60,7 @@ function About() {
                 }}
             >
                 <div>Explore New Collection</div>
-                <LuArrowUpRight />            
+                <LuArrowUpRight className='sm:text-5xl'/>            
             </motion.div>
         </div>
         <motion.div 

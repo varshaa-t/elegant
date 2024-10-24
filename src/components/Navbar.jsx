@@ -15,21 +15,23 @@ function Navbar() {
         delay: 0.2
       }}
     >
-        <div className='text-xl'>
+        <div className='text-xl xl:text-4xl sm:text-2xl'>
             <span className='text-red-700'>E</span>legant
         </div>
-        <ul className='flex items-center space-x-8 font-lufga-light text-[#717171]'>
-            <li className='list-element'>Home</li>
+        <ul className=' flex items-center space-x-8 font-lufga-light text-[#717171]
+                        xl:hidden'
+        >
+            <li>Home</li>
             <IoRemoveOutline className='rotate-90'/>
-            <li className='list-element'>New Collection</li>
+            <li>New Collection</li>
             <IoRemoveOutline className='rotate-90'/>
-            <li className='list-element'>Catalog</li>
+            <li>Catalog</li>
             <IoRemoveOutline className='rotate-90'/>
-            <li className='list-element'>Delivery</li>
+            <li>Delivery</li>
             <IoRemoveOutline className='rotate-90'/>
-            <li className='list-element'>Contact Us</li>
+            <li>Contact Us</li>
         </ul>
-        <LuShoppingCart className='text-[#717171] text-xl'/> 
+        <LuShoppingCart className='text-[#717171] text-xl xl:text-4xl sm:text-2xl'/> 
     </motion.div>
   )
 }
