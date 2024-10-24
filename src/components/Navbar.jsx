@@ -1,10 +1,20 @@
 import React from 'react'
 import { IoRemoveOutline } from "react-icons/io5";
 import { LuShoppingCart } from "react-icons/lu";
+import { easeInOut, motion } from "framer-motion"
 
 function Navbar() {
   return (
-    <div className='text-white flex justify-between items-center'>
+    <motion.div 
+      className='text-white flex justify-between items-center'
+      initial={{ opacity: 0, y:-100}}
+      animate={{ opacity: 1, y: 0}}
+      transition={{
+        duration: 1,
+        ease: "easeInOut",
+        delay: 0.2
+      }}
+    >
         <div className='text-xl'>
             <span className='text-red-700'>E</span>legant
         </div>
@@ -20,7 +30,7 @@ function Navbar() {
             <li className='list-element'>Contact Us</li>
         </ul>
         <LuShoppingCart className='text-[#717171] text-xl'/> 
-    </div>
+    </motion.div>
   )
 }
 

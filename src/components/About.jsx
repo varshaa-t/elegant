@@ -1,32 +1,83 @@
 import React from 'react'
 import { LuArrowUpRight } from "react-icons/lu";
+import { motion } from 'framer-motion';
 
 function About() {
   return (
-    <div className='text-[#7e7e7e] mt-52 flex flex-col space-y-40'>
+    <div className='text-[#7e7e7e] mt-52 flex flex-col space-y-32 pb-24'>
         <div className='flex space-x-4'>
-            <div className='card'>
+            <motion.div 
+                className='card'
+                initial={{opacity: 0, y:100}}
+                whileInView={{ 
+                    opacity: 1,
+                    y: 0
+                }}
+                transition={{
+                    duration: 0.5,
+                    ease: 'easeInOut'
+                }}
+            >
                 Here you will find everything you need. Our 
                 collection is constantly expanding to suit 
                 your unique style.
-            </div>
-            <div className='card'>
+            </motion.div>
+            <motion.div 
+                className='card'
+                initial={{opacity: 0, y:100}}
+                whileInView={{ 
+                    opacity: 1,
+                    y: 0
+                }}
+                transition={{
+                    duration: 0.5,
+                    ease: 'easeInOut',
+                    delay: 0.5
+                }}
+            >
                 The women's clothing in our new collection is 
                 both comfortable and stylish, ideal for both 
                 casual days and special occasions, all at 
                 affordable prices.
-            </div>
-            <div className='card flex items-center justify-center space-x-3 text-white text-xl'>
+            </motion.div>
+            <motion.div 
+                className='card flex items-center justify-center space-x-3 text-white text-xl'
+                initial={{opacity: 0, y:100}}
+                whileInView={{ 
+                    opacity: 1,
+                    y: 0
+                }}
+                transition={{
+                    duration: 0.5,
+                    ease: 'easeInOut',
+                    delay: 1
+                }}
+            >
                 <div>Explore New Collection</div>
                 <LuArrowUpRight />            
-            </div>
+            </motion.div>
         </div>
-        <div className='w-[50vw] mx-auto text-2xl text-center'>   
+        <motion.div 
+            className='w-[50vw] mx-auto text-2xl text-center'
+            initial={{
+                opacity: 0,
+                y: 100
+            }}
+            whileInView={{
+                opacity: 1,
+                y: 0
+            }}
+            transition={{
+                duration: 0.5,
+                ease: 'easeInOut',
+                delay: 0.4
+            }}
+        >   
             At Elegant, we believe that <span className='text-[#a47e1b]'>fashion is an art</span> form -  one that should
             reflect individuality, confidence, and timeless beauty. Our journey
             began with a simple idea: to create clothing that not only fits your 
             body but also <span className='text-[#a47e1b]'>complements your spirit.</span>
-        </div>
+        </motion.div>
     </div>
   )
 }
