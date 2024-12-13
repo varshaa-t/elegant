@@ -7,6 +7,9 @@
     font-family: Lufga;
     src: url('./fonts/lufga-webfont/LufgaMedium.woff') format("woff");
   }
+  :root {
+    --radius: 0.5rem;
+  }
 }
 
 @layer base {
@@ -20,17 +23,17 @@
   .image{
     @apply w-64 h-64 object-cover
   }
-  .image-lg{
-    @apply w-80 h-80 object-cover
-  }
-  .image-md{
-    @apply w-96 h-96 object-cover
-  }
-  .image-sm{
+  .image-xl{
     @apply w-64 h-64 object-cover
   }
+  .image-lg{
+    @apply w-48 h-48 object-cover
+  }
+  .image-md{
+    @apply w-80 h-80 object-cover
+  }
   .image-size{
-    @apply lg:image-lg md:image-md sm:image-sm
+    @apply xl:image-xl lg:image-lg md:image-md 
   }
   .card{
     @apply bg-[#151515] px-4 py-10 rounded-3xl w-[30vw]

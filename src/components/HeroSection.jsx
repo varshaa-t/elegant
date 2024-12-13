@@ -31,27 +31,20 @@ function HeroSection() {
     const img4 = new URL('../assets/img4.jpg', import.meta.url).href;
 
   return (
-    <div className='text-white -mt-20'>
+    <div className='flex flex-col text-white mt-20'>
         <motion.div
-            className=' text-[24rem] relative z-10
-                        xl:text-[15rem] xl:left-28 xl:top-10
-                        lg:text-[13rem] lg:left-12 lg:top-16
-                        md:text-[10rem] md:left-10 md:top-20
-                        sm:text-[5rem] sm:left-28'
+            className='relative z-10 mx-auto text-7xl sm:text-[10rem] md:text-[12rem] lg:text-[16rem] xl:text-[20rem] 2xl:text-[24rem]'
             initial={{opacity: 0, y:100}}
             animate={{opacity: 1, y:0}}
             transition={{duration: 1, ease: "easeInOut", delay: "1"}}
         > 
             Elegant
         </motion.div>
-        <div className='flex left-28 absolute top-[26rem] xl:left-0 xl:top-[19rem]
-                        lg:grid lg:grid-cols-2 lg:space-x-4 lg:space-y-4 lg:left-40 lg:top-[20rem]
-                        md:grid md:grid-cols-1 md:space-y-10
-                        sm:top-[12rem] sm:left-44'
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 mx-auto mt-8 lg:-mt-10 lg:space-x-0'
         >
             <motion.img 
                 src={img1}
-                className='image object-top rounded-full image-size'
+                className='image image-size object-top rounded-full mr-8 mb-8 lg:mb-0 lg:mr-0'
                 variants={imageVariants1}
                 initial={'hidden'}
                 animate={'show'}
@@ -63,7 +56,7 @@ function HeroSection() {
             />
             <motion.img
                 src={img2}
-                className='image rounded-[2.5rem] image-size'
+                className='image image-size rounded-[2.5rem] mb-8 lg:mb-0'
                 variants={imageVariants1}
                 initial={'hidden'}
                 animate={'show'}
@@ -74,7 +67,7 @@ function HeroSection() {
                 }}
             />
             <motion.div 
-                className='w-64 h-64 bg-[#53a826] rounded-full lg:hidden'
+                className='w-48 h-48 hidden lg:block xl:w-64 xl:h-64 bg-[#53a826] rounded-full'
                 initial={{
                     opacity: 0,
                     y: -100
@@ -89,11 +82,11 @@ function HeroSection() {
                     delay: 1.7
                 }}
             >
-                <GoArrowUpRight className='mt-24 ml-28 text-3xl'/>
-                <div className='ml-12 text-xl'>Explore Catalog</div>
+                <GoArrowUpRight className='mt-[70px] xl:mt-24 mx-auto text-3xl'/>
+                <div className='text-lg ml-8 xl:ml-12 xl:text-xl'>Explore Catalog</div>
             </motion.div>
             <motion.img
-                className='image rounded-[2.5rem] image-size'
+                className='image image-size rounded-[2.5rem] mb-8 lg:mb-0'
                 src={img3}
                 variants={imageVariants2}
                 initial='hidden'
@@ -105,7 +98,7 @@ function HeroSection() {
                 }}
             />
             <motion.img
-                className='image object-top rounded-full image-size' 
+                className='image image-size object-top rounded-full' 
                 src={img4}
                 variants={imageVariants2}
                 initial='hidden'
