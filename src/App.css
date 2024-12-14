@@ -36,12 +36,9 @@
     @apply xl:image-xl lg:image-lg md:image-md 
   }
   .card{
-    @apply bg-[#151515] px-4 py-10 rounded-3xl w-[30vw]
-  }
-  .card-xl{
-    @apply w-[25vw]
+    @apply bg-[#151515] px-4 py-10 rounded-3xl text-xl text-center
   }
   .card-lg{
-    @apply w-[50vw] text-2xl text-center
+    @apply text-2xl text-left
   }
 }

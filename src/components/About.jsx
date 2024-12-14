@@ -4,15 +4,12 @@ import { motion } from 'framer-motion';
 
 function About() {
   return (
-    <div className='text-[#7e7e7e] mt-52 flex flex-col space-y-32 pb-24
-                        xl:pt-24 lg:pt-[35rem] md:pt-[95rem] sm:pt-[67rem]'
+    <div className='text-[#7e7e7e] flex flex-col space-y-32 pb-24 pt-20'
     >
-        <div className='flex space-x-4 xl:justify-center 
-                        lg:grid lg:grid-cols-1 lg:mx-auto lg:space-y-10
-                        md:ml-24'
+        <div className='grid grid-cols-1 space-y-10 md:grid-cols-3 md:space-y-0 md:space-x-8 mx-auto'
         >
             <motion.div 
-                className='card xl:card-xl lg:card-lg lg:ml-5'
+                className='card lg:card-lg'
                 initial={{opacity: 0, y:100}}
                 whileInView={{ 
                     opacity: 1,
@@ -29,7 +26,7 @@ function About() {
                 your unique style.
             </motion.div>
             <motion.div 
-                className='card xl:card-xl lg:card-lg'
+                className='card lg:card-lg'
                 initial={{opacity: 0, y:100}}
                 whileInView={{ 
                     opacity: 1,
@@ -48,8 +45,7 @@ function About() {
                 affordable prices.
             </motion.div>
             <motion.div 
-                className=' card flex items-center justify-center space-x-3 text-white text-xl
-                            xl:card-xl lg:card-lg'
+                className='card flex items-center justify-center space-x-3 text-white lg:card-lg'
                 initial={{opacity: 0, y:100}}
                 whileInView={{ 
                     opacity: 1,
@@ -62,12 +58,12 @@ function About() {
                     delay: 1
                 }}
             >
-                <div>Explore New Collection</div>
-                <LuArrowUpRight className='sm:text-5xl'/>            
+                <div className='text-xl md:text-base lg:text-xl'>Explore New Collection</div>
+                <LuArrowUpRight className='text-3xl lg:text-3xl'/>            
             </motion.div>
         </div>
         <motion.div 
-            className='w-[50vw] mx-auto text-2xl text-center'
+            className='sm:w-[50vw] mx-auto text-lg sm:text-2xl text-center'
             initial={{
                 opacity: 0,
                 y: 100

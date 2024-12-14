@@ -6,9 +6,6 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
 import { NavLink } from 'react-router-dom';
@@ -114,15 +111,18 @@ function Navbar() {
           <SheetTrigger>
             <RxHamburgerMenu className='text-3xl'/>
           </SheetTrigger>
-          <SheetContent className="bg-black pt-20">
+          <SheetContent className="flex flex-col bg-black pt-20">
+            <div className='text-4xl text-white text-center mb-10 font-lufga'>
+              <span className='text-red-700'>E</span>legant
+            </div>
             <ul 
-              className='flex flex-col justify-between items-center text-2xl space-y-4 font-lufga-light text-white'
+              className='flex flex-col justify-between items-start pl-4 text-2xl space-y-4 font-lufga-light text-white'
             >
               <li>
                 <NavLink
                   to="/home"
                   className={({isActive}) => 
-                    isActive ? "text-white" : "text-[#717171]"
+                    isActive ? "text-[#717171]" : "text-white"
                   }
                 >
                   Home
@@ -132,7 +132,7 @@ function Navbar() {
                 <NavLink 
                   to={"/new-collection"}
                   className={({isActive}) => 
-                    isActive ? "text-white" : "text-[#717171]"
+                    isActive ? "text-[#717171]" : "text-white"
                   }
                 >
                   New Collection
@@ -142,7 +142,7 @@ function Navbar() {
                 <NavLink
                     to="/catalog"
                     className={({isActive}) => 
-                      isActive ? "text-white" : "text-[#717171]"
+                      isActive ? "text-[#717171]" : "text-white"
                     }
                   >
                     Catalog
@@ -152,7 +152,7 @@ function Navbar() {
                 <NavLink
                   to={"/delivery"}
                   className={({isActive}) => 
-                    isActive ? "text-white" : "text-[#717171]"
+                    isActive ? "text-[#717171]" : "text-white"
                   }
                 >
                   Delivery
@@ -162,7 +162,7 @@ function Navbar() {
                 <NavLink
                   to={"/contact-us"}
                   className={({isActive}) => 
-                    isActive ? "text-white" : "text-[#717171]"
+                    isActive ? "text-[#717171]" : "text-white"
                   }
                 >
                   Contact Us
