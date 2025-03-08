@@ -33,7 +33,7 @@ function HeroSection() {
   return (
     <div className='flex flex-col text-white mt-20'>
         <motion.div
-            className='relative z-10 mx-auto text-7xl sm:text-[10rem] md:text-[12rem] lg:text-[16rem] xl:text-[20rem] 2xl:text-[24rem]'
+            className='relative z-10 mx-auto hidden lg:block lg:text-[16rem] xl:text-[20rem] 2xl:text-[24rem]'
             initial={{opacity: 0, y:100}}
             animate={{opacity: 1, y:0}}
             transition={{duration: 1, ease: "easeInOut", delay: "1"}}

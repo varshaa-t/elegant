@@ -103,7 +103,7 @@ function Navbar() {
         </ul>
         <LuShoppingCart className='text-[#717171] text-xl'/> 
       </div>
-      <div className='text-white flex lg:hidden justify-between items-center px-8 pt-6'>
+      <div className='text-white flex px-4 pt-5 sm:px-8 sm:pt-6 lg:hidden justify-between items-center'>
         <div className='text-4xl'>
             <span className='text-red-700'>E</span>legant
         </div>
